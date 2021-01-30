@@ -29,6 +29,10 @@ const multiplyBy5 = curriedMultiply(5);
 curriedMultiply(3)
 multiplyBy5(4)
 
+// Compose
 
+const compose = (f, g) => (a) => f(g(a));
 
+const sum = (num) => num + 1;
 
+compose (sum,sum)(5);
