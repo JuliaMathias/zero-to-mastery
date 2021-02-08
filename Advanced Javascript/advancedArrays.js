@@ -11,8 +11,6 @@ console.log("forEach", double);
 
 //map, filter, reduce
 
-const mapArray = array.map((num) => {
-  return num * 2;
-});
+const mapArray = array.map(num => num * 2);
 
 console.log("mapArray", mapArray);
