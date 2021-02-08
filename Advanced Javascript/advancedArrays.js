@@ -9,8 +9,20 @@ const newArray = array.forEach((num) => {
 console.log("forEach", double);
 
 
-//map, filter, reduce
+// map
 
 const mapArray = array.map(num => num * 2);
 
 console.log("mapArray", mapArray);
+
+// filter
+
+const filterArray = array.filter(num => num > 5);
+
+console.log("filterArray", filterArray);
+
+// reduce
+
+const reduceArray = array.reduce(num => num > 5);
+
+console.log("reduceArray", reduceArray);
