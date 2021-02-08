@@ -23,6 +23,8 @@ console.log("filterArray", filterArray);
 
 // reduce
 
-const reduceArray = array.reduce(num => num > 5);
+const reduceArray = array.reduce((accumulator, num) => {
+  return accumulator + num
+}, 5);
 
 console.log("reduceArray", reduceArray);
