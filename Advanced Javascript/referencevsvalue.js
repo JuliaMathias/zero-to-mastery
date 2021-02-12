@@ -14,3 +14,7 @@ console.log(d)
 
 let obj = { a: 'a', b: 'b', c: 'c' };
 let clone = Object.assign({}, obj);
+let clone2 = {...obj} // new feature
+
+obj.c = 5;
+console.log(clone)
