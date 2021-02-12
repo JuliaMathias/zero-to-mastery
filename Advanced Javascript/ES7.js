@@ -8,3 +8,4 @@ pets.includes('bird')
 
 
 const square = (x) => x**2
+
