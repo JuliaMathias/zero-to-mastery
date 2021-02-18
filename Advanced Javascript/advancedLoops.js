@@ -26,7 +26,8 @@ for (item of basket) {
 }
 
 // for in - objects
+// enumerating
 
-for (item in destailedBasket) {
+for (item in detailedBasket) {
   console.log(item);
 }
