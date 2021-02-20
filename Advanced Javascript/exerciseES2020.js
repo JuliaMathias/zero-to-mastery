@@ -5,6 +5,8 @@ console.log(Number.MIN_SAFE_INTEGER)
 // Exercise 2: why does this throw an error? How can you fix it?
 3 + 4 + 1n
 
+// because there are more than one type here. you have to convert them all to one type.
+
 // Exercise 3: Clean up this code using optional chaining
 let will_pokemon = {
     pikachu: {
@@ -12,7 +14,7 @@ let will_pokemon = {
         height: 0.4,
         weight: 6,
         power: 'lightning',
-        friend: { 
+        friend: {
             charizard: {
                 species: 'Dragon Pokemon',
                 height: 1.7,
@@ -32,14 +34,19 @@ let andrei_pokemon = {
     }
 }
 
-if (andrei_pokemon && andrei_pokemon.raichu && will_pokemon 
-    && will_pokemon.pikachu && will_pokemon.pikachu.friend 
+if (andrei_pokemon && andrei_pokemon.raichu && will_pokemon
+    && will_pokemon.pikachu && will_pokemon.pikachu.friend
     && will_pokemon.pikachu.friend.charizard) {
         console.log('fight!')
     } else {
         console.log('walk away...')
     }
 
+if (andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard) {
+    console.log('fight!')
+} else {
+    console.log('walk away...')
+}
 
 // Exercise 4: What do these each output?
 console.log(false ?? 'hellooo')
