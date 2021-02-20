@@ -23,7 +23,7 @@ const foo = () => {
 
 foo()
 
-//Async
+// Async
 
 setTimeout(() => {
   console.log('2');
