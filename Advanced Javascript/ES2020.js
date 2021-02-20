@@ -9,6 +9,7 @@ let will_pokemon = {
     species: 'Mouse pokemon',
     height: 0.4,
     weight: 6
+    power:'lightning'
   }
 }
 
@@ -26,3 +27,7 @@ console.log('weight:', weight)
 let weight3 = andrei_pokemon?.pikachu?.weight
 
 console.log(weight3)
+
+// Nullish Coalescing Operator
+
+let power = will_pokemon?.pikachu?.power ?? 'no power'
